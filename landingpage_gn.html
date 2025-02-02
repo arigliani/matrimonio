@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimonio di Giovanni & Nicole</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+</head>
+    
+    
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Menu di Navigazione -->
+    <nav class="bg-white shadow-md fixed w-full top-0 left-0 z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <h1 class="text-2xl font-bold">Giovanni & Nicole</h1>
+                <ul class="flex space-x-6">
+                    <li><a href="#inizio" class="text-gray-700 hover:text-blue-600">Home </a></li>
+                    <li><a href="#evento" class="text-gray-700 hover:text-blue-600">Evento</a></li>
+                     <li><a href="#logistica" class="text-gray-700 hover:text-blue-600">Logistica</a></li>                   
+                     <li><a href="#regalo" class="text-gray-700 hover:text-blue-600">Regalo</a></li>                   
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Sezione Iniziale -->
+<section id="inizio" class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center relative" style="background-image: url('https://source.unsplash.com/1600x900/?wedding');">
+    <!-- Video di sfondo -->
+    <div class="absolute inset-0 w-full h-full overflow-hidden">
+        <iframe class="w-full h-full absolute inset-0 opacity-50 pointer-events-none" 
+            src="https://www.youtube.com/embed/8Kn3CjT8WWk?autoplay=1&loop=1&playlist=8Kn3CjT8WWk&mute=1&controls=0&showinfo=0&modestbranding=1" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    
+    <!-- Contenuto Testuale -->
+    <div class="relative z-10">
+        <h1 class="text-5xl font-bold text-white drop-shadow-lg">Il Matrimonio di Giovanni & Nicole</h1>
+        <p class="text-lg text-white mt-4">30 Agosto 2025</p>
+    </div>
+</section>
+
+
+    <!-- Sezione evento -->
+    <section id="evento" class="py-16 px-8 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-semibold">Dettagli dell'Evento</h2>
+            <p class="mt-4 text-lg">La cerimonia si terrà il <strong>30 agosto 2025</strong>  nel <strong>centro storico di Fuscaldo</strong>,<br> successivamente ci sposteremo presso <strong>l'agriturismo il Cerro</strong> per festeggiare insieme.</p>
+            <p class="mt-4 text-lg"> <em> Seguiranno maggiori dettagli su orario e luogo della cerimonia... <strong>Stay Tuned!</strong></em></p>
+        </div>
+        <div id="map" class="w-full h-[500px] mt-6 rounded-lg shadow-md"></div>
+    </section>
+    
+    <section id="logistica" class="max-w-5xl mx-auto mt-12 p-6 bg-gray-100 ">
+    <h2 class="text-3xl font-semibold text-center">Logistica</h2>
+
+    <!-- Come Arrivare -->
+    <div class="mt-8">
+        <h3 class="text-2xl font-semibold">Come Arrivare</h3>
+        <p class="mt-4 text-lg">
+            Puoi raggiungere Fuscaldo in diversi modi:
+        </p>
+        <ul class="mt-2 text-lg list-disc pl-6">
+            <li><strong>🚗 In Auto:</strong> Segui le indicazioni di Google Maps.</li>
+            <li><strong>🚆 In Treno:</strong> Stazione ferroviaria di Paola (a 10 minuti da Fuscaldo), arriva l'alta velocità.</li>
+            <li><strong>✈️ In Aereo:</strong> Aeroporto di Lamezia Terme, a circa 1 ora di distanza.</li>
+        </ul>
+        <p class="mt-4 text-lg text-center">
+        <em>Se arrivi in treno o in aereo, coordinati con gli altri invitati per gli spostamenti.<br>
+        Consigliamo in alternativa l'affitto di una macchina.</em>
+        </p>
+
+    </div>
+
+    <!-- Dove Dormire -->
+    <div class="mt-8">
+        <h3 class="text-2xl font-semibold">Dove Dormire</h3>
+        <p class="mt-4 text-lg">
+            A secodna delle tue esigenze puoi liberamente scegliere dove pernottare. Segnaliamo due opzioni convenzionate con noi segnalando che la prenotazione è inerente al matrimonio di Giovanni&Nicole
+        </p>
+        <ul class="mt-2 text-lg list-disc pl-6">
+            <li><strong>🏡 Fuscaldo Appartment:</strong> <a href="https://www.fuscaldoapartment.it/appartamenti/" target="_blank" class="text-blue-600 hover:underline">
+        sito web</a><br>
+                <a><em> Riferimento: Piero +39 371100602766 </em>
+                </a></li>
+            <li><strong>🏕️ Campeggio internazionale:</strong><a href="https://www.facebook.com/share/1534kfZ2Gr/" target="_blank" class="text-blue-600 hover:underline">
+        Pagina Facebook
+                </a><br>
+                <a><em>  Riferimento: Carmela +39 3489008852 - campinginternazionalefuscaldo@gmail.com </em>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+    
+   <!-- regalo-->
+    
+    <section id="evento" class="py-16 px-8 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+    
+
+<section id="regalo" class="py-16 px-8 bg-white">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="max-w-4xl mx-auto text-center">
+                <img src="https://drive.google.com/file/d/10ECyaqAGkrkr2rlA7aq-OSdyFRa5iGj-/view?usp=drive_link" alt="Immagine_regalo" class="rounded-lg shadow-lg">
+            </div>
+            <div class="w-full md:w-1/2 p-6">
+                <h2 class="text-2xl font-semibold text-gray-800">Il Tuo Regalo Speciale</h2>
+                <p class="mt-4 text-gray-600">Scopri il nostro fantastico regalo che abbiamo preparato per te. Un'esperienza unica da non perdere!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        // Inizializza la mappa
+                // Inizializza la mappa
+        var map = L.map('map').setView([39.41573023059399, 16.030596560992404], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        
+        L.marker([39.41573023059399, 16.030596560992404]).addTo(map)
+            .bindPopup('<strong>Luogo della cerimonia </strong> - Piazza Indipendenza - 87024 Fuscaldo CS ')
+            .openPopup();
+        
+        L.marker([39.45257283591576, 16.019113225441117]).addTo(map)
+            .bindPopup('<strong>Luogo della festa </strong>- Il Cerro, Agriturismo Zagarese \n Contrada Piano Arcangelo, 87024, Fuscaldo CS')
+            .openPopup();
+    </script>
+    
+    
+    
+
+
+    </div>
+</footer>
+</body>
+</html>
