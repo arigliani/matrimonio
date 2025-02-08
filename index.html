@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matrimonio di Giovanni & Nicole</title>
     <link rel="stylesheet" href="landinf_style.css">
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/NM9y9KGZ/n-logo.jpg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -16,7 +17,7 @@
 <body class="bg-gray-100 text-gray-900">
 
     <!-- Menu di Navigazione -->
-    <nav class="bg-white shadow-md fixed w-full top-0 left-0 z-50" >
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-screen max-w-full z-50" >
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                     <h1 class="text-2xl font-bold">Giovanni & Nicole</h1>
@@ -31,18 +32,19 @@
 
                     <!-- Icona menu mobile -->
                     <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
                         </svg>
                     </button>
+                    
                 
          </div>
         </div>
 
         <!-- Menu mobile -->
-        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-md absolute top-16 left-0 w-full">
-            <ul class="flex flex-col space-y-4 p-4 text-right">
-                <li><a href="#inizio" class="text-gray-700 hover:text-blue-600">Home</a></li>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-md absolute top-16 left-0 w-full max-w-full z-50">
+            <ul class="flex flex-col space-y-1 p-4 text-right max-w-full z-50">
+                <li><a href="#inizio" class="text-gray-700 hover:text-blue-600z-50">Home</a></li>
                 <li><a href="#evento" class="text-gray-700 hover:text-blue-600">Evento</a></li>
                 <li><a href="#logistica" class="text-gray-700 hover:text-blue-600">Logistica</a></li>
                 <li><a href="#regalo" class="text-gray-700 hover:text-blue-600">Regalo</a></li>
@@ -90,13 +92,18 @@
             Puoi raggiungere Fuscaldo in diversi modi:
         </p>
         <ul class="mt-2 text-lg list-disc pl-6">
-            <li><strong>🚗 In Auto:</strong> Segui le indicazioni di Google Maps.</li>
-            <li><strong>🚆 In Treno:</strong> Stazione ferroviaria di Paola (a 10 minuti da Fuscaldo), arriva l'alta velocità.</li>
-            <li><strong>✈️ In Aereo:</strong> Aeroporto di Lamezia Terme, a circa 1 ora di distanza.</li>
+            <li><strong>🚗 In Auto:</strong> Segui le indicazioni di Google Maps per <a href="https://maps.app.goo.gl/3KLuDDGSpM39AiCo9" target="_blank" rel="noopener noreferrer" style="color: blue;">
+                Fuscaldo (CS) </li>
+            </a>
+            <li><strong>🚆 In Treno:</strong> Stazione ferroviaria di Paola (a 10 minuti da Fuscaldo), arriva l'alta velocità</li>
+            <li><strong>✈️ In Aereo:</strong> Aeroporto di Lamezia Terme, a circa 1 ora di distanza</li>
         </ul>
         <p class="mt-4 text-lg text-center">
-        <em>Se arrivi in treno o in aereo, coordinati con gli altri invitati per gli spostamenti.<br>
-        Consigliamo in alternativa l'affitto di una macchina.</em>
+        <em>Se arrivi in treno o in aereo, puoi coordinarti con gli altri invitati <br> per gli spostamenti tramite 
+            <a href="https://t.me/+1IaWtxA12EQyNmQ0" target="_blank" rel="noopener noreferrer" style="color: blue;">questo</a> gruppo telegram.<br>
+        Consigliamo in alternativa l'affitto di una macchina.<br>
+        
+        </em>
         </p>
 
     </div>
